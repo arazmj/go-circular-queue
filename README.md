@@ -15,21 +15,21 @@ import (
 
 func main() {
     queue := NewCircularQueue(3)
-	queue.Enqueue(1)
-	queue.Enqueue(2)
-	queue.Enqueue(3)
-	if queue.IsFull() {
-		fmt.Println("Queue is full.")
-	}
-	v1, ok := queue.Dequeue()
-	v2, ok := queue.Dequeue()
-	v3, ok := queue.Dequeue()
-	if ok {
-		fmt.Println("Values %d, %d, %d", v1, v2, v3)
-	}
-	if queue.IsEmpty() {
-		fmt.Println("Queue is empty.")
-	} 
+    queue.Enqueue(1)
+    queue.Enqueue(2)
+    queue.Enqueue(3)
+    if queue.IsFull() {
+        fmt.Println("Queue is full.")
+    }
+    v1, ok := queue.Dequeue()
+    v2, ok := queue.Dequeue()
+    v3, ok := queue.Dequeue()
+    if ok {
+        fmt.Println("Values %d, %d, %d", v1, v2, v3)
+    }
+    if queue.IsEmpty() {
+        fmt.Println("Queue is empty.")
+    } 
 }
 ```
 
